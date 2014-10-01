@@ -11,7 +11,7 @@
 		<version>1.9-SNAPSHOT</version>
 		<relativePath>..\..\PomParent\parent.pom</relativePath>
 	</parent>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>com.persistentsas.mavenTraining.Project1</groupId>
@@ -29,7 +29,56 @@
 
 	<!-- Build Settings -->
 	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>${cobertura.version}</version>
+				<configuration>
+					<check>
+						<branchRate>55</branchRate>
+						<lineRate>55</lineRate>
+						<haltOnFailure>true</haltOnFailure>
+						<totalBranchRate>55</totalBranchRate>
+						<totalLineRate>55</totalLineRate>
+						<packageLineRate>55</packageLineRate>
+						<packageBranchRate>55</packageBranchRate>
+						<regexes>
+							<regex>
+								<pattern>org.persistentsas.mavenTraining.*</pattern>
+								<branchRate>55</branchRate>
+								<lineRate>55</lineRate>
+							</regex>
+							<regex>
+								<pattern>com.example.boringcode.*</pattern>
+								<branchRate>40</branchRate>
+								<lineRate>30</lineRate>
+							</regex>
+						</regexes>
+					</check>
 
+					<instrumentation>
+						<ignores>
+							<ignore>com.example.boringcode.*</ignore>
+						</ignores>
+						<excludes>
+							<exclude>com/example/dullcode/**/*.class</exclude>
+							<exclude>com/example/**/*Test.class</exclude>
+						</excludes>
+					</instrumentation>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>clean</goal>
+
+							<goal>check</goal>
+
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 	</build>
 	<reporting />
 

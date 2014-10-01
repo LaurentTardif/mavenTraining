@@ -11,6 +11,11 @@
 
 	<packaging>pom</packaging>
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<cobertura.version>2.6</cobertura.version>
+		
 		<global.projectVersion>1.7-SNAPSHOT</global.projectVersion>
 		<project1.Version>${global.projectVersion}</project1.Version>
 		<project1.module1.Version>${project1.Version}</project1.module1.Version>
@@ -29,9 +34,20 @@
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>4.11</version>
-				<scope>compile</scope>
+			</dependency>
+			<dependency>
+				<groupId>net.sourceforge.cobertura</groupId>
+				<artifactId>cobertura</artifactId>
+				<version>2.0.3</version>
+			</dependency>
+			<!-- reporting -->
+			<dependency>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.7</version>
 			</dependency>
 
+			<!-- internal -->
 			<dependency>
 				<groupId>com.persistentsas.mavenTraining.Project1</groupId>
 				<artifactId>module1</artifactId>
