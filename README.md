@@ -1,4 +1,6 @@
 mavenTraining
 =============
 
-Public repository use to blgo about maven tips, example, and practices
+Public repository use to blog about maven tips, example, and practices
+
+
