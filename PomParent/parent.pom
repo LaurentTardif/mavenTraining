@@ -8,9 +8,9 @@
 	<groupId>com.persistentsas.mavenTraining.PomParent</groupId>
 	<artifactId>parent</artifactId>
 	<version>1.9-SNAPSHOT</version>
-	
+
 	<packaging>pom</packaging>
-		<properties>
+	<properties>
 		<global.projectVersion>1.7-SNAPSHOT</global.projectVersion>
 		<project1.Version>${global.projectVersion}</project1.Version>
 		<project1.module1.Version>${project1.Version}</project1.module1.Version>
@@ -20,10 +20,18 @@
 		<project2.module1.Version>${project2.Version}</project2.module1.Version>
 		<project1.javaTarget>1.7</project1.javaTarget>
 	</properties>
-	
+
 	<!--<parent></parent>-->
 	<dependencyManagement>
 		<dependencies>
+			<!-- 3rd party dependencies -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.11</version>
+				<scope>compile</scope>
+			</dependency>
+
 			<dependency>
 				<groupId>com.persistentsas.mavenTraining.Project1</groupId>
 				<artifactId>module1</artifactId>

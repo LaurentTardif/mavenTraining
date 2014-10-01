@@ -5,7 +5,6 @@
 	<groupId>com.persistentsas.mavenTraining.Project1</groupId>
 	<artifactId>module1</artifactId>
 	<packaging>jar</packaging>
-	<dependencies />
 	<parent>
 		<groupId>com.persistentsas.mavenTraining.PomParent</groupId>
 		<artifactId>parent</artifactId>
@@ -13,6 +12,13 @@
 		<relativePath>..\..\PomParent\parent.pom</relativePath>
 	</parent>
 	<dependencyManagement />
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
 	<modules>
 	</modules>
 	<properties />
