@@ -51,6 +51,10 @@
 	<repositories />
 	<pluginRepositories />
 	<distributionManagement>
+			<site>
+			<id>${project.artifactId}-site</id>
+			<url>file:///c:/temp/site/Project2/${project.artifactId}/pom.xml/</url>
+		</site>
 		<repository>
 			<id>GrenobleWrite</id>
 			<name>artifatoryWrite</name>

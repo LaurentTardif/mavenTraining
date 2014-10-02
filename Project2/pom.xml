@@ -2,9 +2,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<!-- The Basics -->
-	<groupId>com.persistentsas.mavenTraining.Project1</groupId>
-	<artifactId>project1</artifactId>
-	<name>project1</name>
+	<groupId>com.persistentsas.mavenTraining.Project2</groupId>
+	<artifactId>project2</artifactId>
+	<name>project2</name>
 	<packaging>pom</packaging>
 	<dependencies />
 	<parent>
@@ -15,19 +15,15 @@
 	</parent>
 	<dependencyManagement />
 	<modules>
-		<module>module1\pom.xml</module>
-		<module>module2\pom.xml</module>
+		<module>module1\</module>
 	</modules>
 	<properties />
 
 	<!-- Build Settings -->
-	<build>
-
-	</build>
+	<build />
 	<reporting />
 
 	<!-- More Project Information -->
-
 	<description />
 	<url />
 	<inceptionYear />
@@ -49,6 +45,10 @@
 	<repositories />
 	<pluginRepositories />
 	<distributionManagement>
+		<site>
+			<id>${project.artifactId}-site</id>
+			<url>file:///c:/temp/site/${project.artifactId}/${project.artifactId}.${project.packaging}</url>
+		</site>
 		<repository>
 			<id>GrenobleWrite</id>
 			<name>artifatoryWrite</name>

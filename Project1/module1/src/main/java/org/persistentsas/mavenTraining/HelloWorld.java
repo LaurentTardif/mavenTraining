@@ -1,20 +1,29 @@
-package org.persistentsas.mavenTraining ; 
+package org.persistentsas.mavenTraining;
 
+/**
+ * Simple class for demo purpose.
+ * @author laurent.tardif
+ *
+ */
 public class HelloWorld {
 
-	protected StringBuffer msg = new StringBuffer("Hello World, my name is ") ; 
-	
-	public HelloWorld(String yourName) {
-		msg.append(yourName);
-	}
-	
-	public StringBuffer getMessage() {
-		return msg ;
-	}
-	
-	public static void main(String[] args) {
-		HelloWorld instance = new HelloWorld("John Doo");
-		System.out.println(instance.getMessage());
-	}	
+    /**
+     * The prefix of the greetting message.
+     */
+    protected StringBuffer msg = new StringBuffer("Hello World, my name is");
+    /**
+     * Constructor, will use your name is the output message.
+     * @param yourName the name use for the greeting.
+     */
+    public HelloWorld(final String yourName) {
+        msg.append(" " + yourName);
+    }
 
+    /**
+     *
+     * @return the greeting message.
+     */
+    public final StringBuffer getMessage() {
+        return msg;
+    }
 }
