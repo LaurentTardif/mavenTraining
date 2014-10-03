@@ -49,7 +49,7 @@
 	<repositories />
 	<pluginRepositories />
 	<distributionManagement>
-			<site>
+		<site>
 			<id>${project.artifactId}-site</id>
 			<url>file:///c:/temp/site/${project.artifactId}/${project.artifactId}.${project.packaging}</url>
 		</site>

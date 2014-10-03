@@ -4,6 +4,7 @@
 	<!-- The Basics -->
 	<groupId>com.persistentsas.mavenTraining.Project1</groupId>
 	<artifactId>module2</artifactId>
+	<name>module2</name>
 	<packaging>jar</packaging>
 	<parent>
 		<groupId>com.persistentsas.mavenTraining.PomParent</groupId>
@@ -30,52 +31,9 @@
 	<!-- Build Settings -->
 	<build>
 		<plugins>
-			<!-- <plugin>
-				<groupId>org.jacoco</groupId>
-				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>${jacoco.version}</version>
-				<executions>
-					<execution>
-						<id>default-prepare-agent</id>
-						<goals>
-							<goal>prepare-agent</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>default-report</id>
-						<phase>prepare-package</phase>
-						<goals>
-							<goal>report</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>default-check</id>
-						<goals>
-							<goal>check</goal>
-						</goals>
-						<configuration>
-						<rules>
-						   <rule>
-                                    <element>BUNDLE</element>
-                                    <limits>
-                                        <limit>
-                                            <counter>INSTRUCTION</counter>
-                                            <value>COVEREDRATIO</value>
-                                            <minimum>0.15</minimum>
-                                        </limit>
-                                        <limit>
-                                            <counter>CLASS</counter>
-                                            <value>MISSEDCOUNT</value>
-                                            <maximum>0</maximum>
-                                        </limit>
-                                    </limits>
-                                </rule> 
-						</rules>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin> -->
-			<plugin>
+		
+		
+<!--			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>${maven.site.plugin}</version>
@@ -144,10 +102,8 @@
 							<configuration>
 								<aggregate>true</aggregate>
 								<sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
-								<!-- The minimum tokens before a violation -->
-								<minimumTokens>100</minimumTokens>
-								<!-- Turn off if no xref report -->
-								<linkXRef>true</linkXRef>
+									<minimumTokens>100</minimumTokens>
+									<linkXRef>true</linkXRef>
 								<verbose>true</verbose>
 								<targetJdk>${pmd.java.version}</targetJdk>
 								<rulesets>
@@ -188,13 +144,12 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-
+-->
 		</plugins>
 	</build>
 	<reporting />
 
 	<!-- More Project Information -->
-	<name>module2</name>
 	<description />
 	<url />
 	<inceptionYear />

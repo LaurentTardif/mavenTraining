@@ -4,6 +4,7 @@
 	<!-- The Basics -->
 	<groupId>com.persistentsas.mavenTraining.Project1</groupId>
 	<artifactId>module1</artifactId>
+	<name>module1</name>
 	<packaging>jar</packaging>
 	<parent>
 		<groupId>com.persistentsas.mavenTraining.PomParent</groupId>
@@ -36,7 +37,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>${jacoco.version}</version>
+				<!--<version>${jacoco.version}</version>-->
 				<executions>
 					<execution>
 						<id>default-prepare-agent</id>
@@ -80,7 +81,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	<reporting>
+	<!--<reporting>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -121,9 +122,9 @@
 			</plugin>
 		</plugins>
 	</reporting>
-
+-->
 	<!-- More Project Information -->
-	<name>module1</name>
+	
 	<description />
 	<url />
 	<inceptionYear />
