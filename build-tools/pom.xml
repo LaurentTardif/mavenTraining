@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- The Basics -->
+	<groupId>com.persistentsas.mavenTraining</groupId>
+	<artifactId>build-tools</artifactId>
+	<name>build-tools</name>
+	<version>1.9-SNAPSHOT</version>
+	<parent>
+		<groupId>com.persistentsas.mavenTraining.PomParent</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.9-SNAPSHOT</version>
+		<relativePath>..\PomParent\parent.pom</relativePath>
+	</parent>
+	<modules/>
+	<properties />
+
+	<!-- Build Settings -->
+	<build>
+	</build>
+	<dependencyManagement>
+		<dependencies>
+			<!-- reporting -->
+			<dependency>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>${maven.project.info.reports.plugin.version}</version>
+			</dependency>			
+		</dependencies>
+	</dependencyManagement>
+
+	<!-- More Project Information -->
+	<description />
+	<url />
+	<inceptionYear />
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+	<organization>
+		<name>PersistentSAS</name>
+		<url>http://www.persistentsas.fr</url>
+	</organization>
+	<developers>
+		<developer>
+			<id>LaurentT</id>
+			<name>Laurent Tardif</name>
+			<email>Laurent.Tardif@persistentsas.com</email>
+			<url>http://www.persistentsas.fr</url>
+			<organization>PersistentSAS</organization>
+			<organizationUrl>http://www.persistentsas.fr</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+			<properties>
+				<picUrl>http://www.persistentsas.fr</picUrl>
+			</properties>
+		</developer>
+	</developers>
+	<contributors />
+
+	<!-- Environment Settings -->
+	<issueManagement />
+	<ciManagement />
+	<mailingLists />
+	<scm>
+		<connection>scm:git:file:///c:/dev/mavenTraining/mavenTraining.git</connection>
+		<developerConnection>scm:git:file:///c:/dev/mavenTraining/mavenTraining.git</developerConnection>
+		<url>file:///c:/dev/mavenTraining/mavenTraining.git</url>
+	</scm>
+	<prerequisites />
+	<repositories />
+	<pluginRepositories />
+	<distributionManagement>
+		<site>
+			<id>${project.artifactId}-site</id>
+			<url>file:///c:/temp/site/${project.artifactId}/</url>
+		</site>
+		<repository>
+			<id>GrenobleWrite</id>
+			<name>artifatoryWrite</name>
+			<url>http://10.190.200.92:8081/artifactory/libs-release-local/</url>
+		</repository>
+		<snapshotRepository>
+			<id>GrenobleWrite</id>
+			<url>http://10.190.200.92:8081/artifactory/libs-snapshot-local/</url>
+		</snapshotRepository> 
+	</distributionManagement>
+	<profiles />
+</project>

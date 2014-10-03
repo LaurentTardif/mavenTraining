@@ -25,6 +25,13 @@
 
 	<!-- Build Settings -->
 	<build>
+	<!-- <extensions>
+      <extension>
+        <groupId>com.persistentsas.mavenTraining</groupId>
+        <artifactId>build-tools</artifactId>
+        <version>1.9-SNAPSHOT</version>
+      </extension>
+    </extensions> -->
 		<plugins>
 			<plugin>
 				<groupId>org.jacoco</groupId>
