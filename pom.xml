@@ -72,7 +72,7 @@
 				</executions>
 				<configuration>
 					<reportPlugins>
-						<!--
+						
 						<plugin>
 							<groupId>org.codehaus.mojo</groupId>
 							<artifactId>l10n-maven-plugin</artifactId>
@@ -85,7 +85,7 @@
 								</locales>
 							</configuration>
 						</plugin>
-						-->
+						
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-surefire-report-plugin</artifactId>
