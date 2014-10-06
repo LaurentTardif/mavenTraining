@@ -51,7 +51,7 @@
 	<repositories />
 	<pluginRepositories />
 	<distributionManagement>
-			<site>
+		<site>
 			<id>${project.artifactId}-site</id>
 			<url>file:///c:/temp/site/Project2/${project.artifactId}/pom.xml/</url>
 		</site>
