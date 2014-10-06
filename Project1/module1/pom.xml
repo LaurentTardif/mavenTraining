@@ -81,48 +81,6 @@
 			</plugin>
 		</plugins>
 	</build>
-	<!--<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>taglist-maven-plugin</artifactId>
-				<version>2.4</version>
-				<configuration>
-					<tags>
-						<tag>fixme</tag>
-						<tag>FixMe</tag>
-						<tag>FIXME</tag>
-						<tag>@todo</tag>
-						<tag>todo</tag>
-						<tag>TODO</tag>
-						<tag>xxx</tag>
-						<tag>@deprecated</tag>
-					</tags>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>2.13</version>
-				<reportSets>
-					<reportSet>
-						<reports>
-							<report>checkstyle</report>
-						</reports>
-					</reportSet>
-				</reportSets>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>3.0.0</version>
-				<configuration>
-					<xmlOutputDirectory>target/site</xmlOutputDirectory>
-				</configuration>
-			</plugin>
-		</plugins>
-	</reporting>
--->
 	<!-- More Project Information -->
 	
 	<description />
@@ -150,15 +108,6 @@
 			<id>${project.artifactId}-site</id>
 			<url>file:///c:/temp/site/Project1/${project.artifactId}/pom.xml/</url>
 		</site>
-		<repository>
-			<id>GrenobleWrite</id>
-			<name>artifatoryWrite</name>
-			<url>http://10.190.200.92:8081/artifactory/libs-release-local/</url>
-		</repository>
-		<snapshotRepository>
-			<id>GrenobleWrite</id>
-			<url>http://10.190.200.92:8081/artifactory/libs-snapshot-local/</url>
-		</snapshotRepository> 
 	</distributionManagement>
 	<profiles />
 </project> 

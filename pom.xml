@@ -16,7 +16,7 @@
 		<!--<module>PomParent\parent.pom</module>-->
 		<!-- <module>build-tools\pom.xml</module>-->
 		<module>Project1\</module>
-		<!--<module>Project2\</module>-->
+		<module>Project2\</module>
 		<!-- <module>..\mavenTrainingRepo2\pom.xml</module> -->
 	</modules>
 	<properties />
@@ -208,36 +208,10 @@
 	<description />
 	<url />
 	<inceptionYear />
-	<licenses>
-		<license>
-			<name>Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-			<comments>A business-friendly OSS license</comments>
-		</license>
-	</licenses>
-	<organization>
-		<name>PersistentSAS</name>
-		<url>http://www.persistentsas.fr</url>
-	</organization>
-	<developers>
-		<developer>
-			<id>LaurentT</id>
-			<name>Laurent Tardif</name>
-			<email>Laurent.Tardif@persistentsas.com</email>
-			<url>http://www.persistentsas.fr</url>
-			<organization>PersistentSAS</organization>
-			<organizationUrl>http://www.persistentsas.fr</organizationUrl>
-			<roles>
-				<role>architect</role>
-				<role>developer</role>
-			</roles>
-			<timezone>+1</timezone>
-			<properties>
-				<picUrl>http://www.persistentsas.fr</picUrl>
-			</properties>
-		</developer>
-	</developers>
+	<licenses/>
+	<organization/>	
+	<developers/>		
+	
 	<contributors />
 
 	<!-- Environment Settings -->
@@ -257,15 +231,6 @@
 			<id>${project.artifactId}-site</id>
 			<url>file:///c:/temp/site/${project.artifactId}/</url>
 		</site>
-		<repository>
-			<id>GrenobleWrite</id>
-			<name>artifatoryWrite</name>
-			<url>http://10.190.200.92:8081/artifactory/libs-release-local/</url>
-		</repository>
-		<snapshotRepository>
-			<id>GrenobleWrite</id>
-			<url>http://10.190.200.92:8081/artifactory/libs-snapshot-local/</url>
-		</snapshotRepository> 
 	</distributionManagement>
 	<profiles />
 </project>

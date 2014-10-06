@@ -49,15 +49,6 @@
 			<id>${project.artifactId}-site</id>
 			<url>file:///c:/temp/site/${project.artifactId}/${project.artifactId}.${project.packaging}</url>
 		</site>
-		<repository>
-			<id>GrenobleWrite</id>
-			<name>artifatoryWrite</name>
-			<url>http://10.190.200.92:8081/artifactory/libs-release-local/</url>
-		</repository>
-		<snapshotRepository>
-			<id>GrenobleWrite</id>
-			<url>http://10.190.200.92:8081/artifactory/libs-snapshot-local/</url>
-		</snapshotRepository> 
 	</distributionManagement>
 	<profiles />
 </project> 

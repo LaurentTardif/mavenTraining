@@ -159,9 +159,36 @@
 	<description></description>
 	<url></url>
 	<inceptionYear></inceptionYear>
-	<licenses></licenses>
-	<organization></organization>
-	<developers></developers>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+	<organization>
+		<name>PersistentSAS</name>
+		<url>http://www.persistentsas.fr</url>
+	</organization>
+	<developers>
+		<developer>
+			<id>LaurentT</id>
+			<name>Laurent Tardif</name>
+			<email>Laurent.Tardif@persistentsas.com</email>
+			<url>http://www.persistentsas.fr</url>
+			<organization>PersistentSAS</organization>
+			<organizationUrl>http://www.persistentsas.fr</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+			<properties>
+				<picUrl>http://www.persistentsas.fr</picUrl>
+			</properties>
+		</developer>
+	</developers>
 	<contributors></contributors>
 
 	<!-- Environment Settings -->
