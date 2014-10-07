@@ -11,14 +11,14 @@
 
 	<packaging>pom</packaging>
 	<properties>
+
+		<!-- build mechanism property -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
+		<maven.resources.plugin.encoding>${project.build.sourceEncoding}</maven.resources.plugin.encoding>
+		<maven.compiler.plugin.encoding>${project.build.sourceEncoding}</maven.compiler.plugin.encoding>
 
-		<jacoco.version>0.7.2.201409121644</jacoco.version>
 
-		<maven.project.info.reports.plugin.version>2.7</maven.project.info.reports.plugin.version>
-
-		<pmd.java.version>1.7</pmd.java.version>
 		<maven.deploy.plugin>2.8.2</maven.deploy.plugin>
 		<maven.checkstyle.plugin>2.7</maven.checkstyle.plugin>
 		<maven.cobertura.plugin>2.6</maven.cobertura.plugin>
@@ -26,7 +26,14 @@
 		<maven.javadoc.plugin>2.9</maven.javadoc.plugin>
 		<maven.l10n.plugin>1.0-alpha-2</maven.l10n.plugin>
 		<maven.jxr.plugin>2.3</maven.jxr.plugin>
+		<maven.resources.plugin>2.6</maven.resources.plugin>
+		<maven.compiler.plugin>2.5.1</maven.compiler.plugin>
+
+		<!-- Plugin having a custom setting -->
 		<maven.pmd.plugin>2.7.1</maven.pmd.plugin>
+		<pmd.java.version>1.7</pmd.java.version>
+
+		<maven.project.info.reports.plugin.version>2.7</maven.project.info.reports.plugin.version>
 		<maven.findbugs.plugin>3.0.0</maven.findbugs.plugin>
 		<maven.project.info.reports.plugin>2.7</maven.project.info.reports.plugin>
 		<maven.release.plugin>2.5.1</maven.release.plugin>
@@ -36,6 +43,8 @@
 		<maven.surefire.report.plugin>2.17</maven.surefire.report.plugin>
 		<maven.taglist.plugin>2.4</maven.taglist.plugin>
 		<maven.versions.plugin>2.1</maven.versions.plugin>
+
+		<jacoco.version>0.7.2.201409121644</jacoco.version>
 
 
 	</properties>
@@ -78,6 +87,21 @@
 	<!-- Build Settings -->
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<encoding>${maven.resources.plugin.encoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<encoding>${maven.compiler.plugin.encoding}</encoding>
+				</configuration>
+			</plugin>
+
 		</plugins>
 		<pluginManagement>		
 			<plugins>	
@@ -140,6 +164,16 @@
 					<configuration>
 						<connectionType>connection</connectionType>
 					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>${maven.resources.plugin}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven.compiler.plugin}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
