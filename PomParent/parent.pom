@@ -28,6 +28,7 @@
 		<maven.jxr.plugin>2.3</maven.jxr.plugin>
 		<maven.resources.plugin>2.6</maven.resources.plugin>
 		<maven.compiler.plugin>2.5.1</maven.compiler.plugin>
+		<maven.jar.plugin>2.4</maven.jar.plugin>
 
 		<!-- Plugin having a custom setting -->
 		<maven.pmd.plugin>2.7.1</maven.pmd.plugin>
@@ -164,6 +165,11 @@
 					<configuration>
 						<connectionType>connection</connectionType>
 					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>${maven.jar.plugin}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
