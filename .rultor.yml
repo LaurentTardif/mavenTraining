@@ -1,0 +1,22 @@
+readers:
+    - urn:github:1119686
+
+docker:
+  image: "ubuntu:12.10"	
+	
+merge: # or "deploy" or "release"
+  commanders:
+    - LaurentTardif
+  env:
+    MAVEN_OPTS: "-XX:MaxPermSize=256m -Xmx512m"
+  script:
+    - "mvn clean test install"
+	
+release: # or "deploy" or "release"
+  commanders:
+    - LaurentTardif
+  env:
+    MAVEN_OPTS: "-XX:MaxPermSize=256m -Xmx512m"
+  script:
+    - "mvn clean test site:site install"
+	
