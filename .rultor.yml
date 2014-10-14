@@ -18,5 +18,6 @@ release: # or "deploy" or "release"
   env:
     MAVEN_OPTS: "-XX:MaxPermSize=256m -Xmx512m"
   script:
+    - "git commit -am \"${tag}\""
     - "mvn clean test site:site install"
  
