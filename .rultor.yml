@@ -1,8 +1,12 @@
+#YML configuration to manage
+#  Merge request from user
+#  Release request
+
 readers:
     - urn:github:1119686
 
-docker:
-  image: "ubuntu:12.10"
+#docker:
+#  image: "ubuntu:12.10"
  
 merge: # or "deploy" or "release"
   commanders:
